@@ -1,0 +1,19 @@
+# 1. Ignore absolutely everything by default
+*
+
+# 2. Allow Git to see into specific directories (Crucial for rules to work)
+!*/
+
+# 3. CRITICAL: Explicitly force Git to ignore node_modules completely
+node_modules/
+.pnpm-store/
+
+# 4. Whitelist ONLY your 5 core files
+!server.js
+!model.js
+!package.json
+!pnpm-lock.yaml
+!README.md
+
+# 5. Whitelist the .gitignore file itself
+!.gitignore
